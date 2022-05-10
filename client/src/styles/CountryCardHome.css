@@ -1,0 +1,48 @@
+.countryname{
+    border-radius: 10px;
+    width: 220px;
+    color:black;
+    background-color: rgba(207, 207, 209, 0.951);
+    height:60px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    font-family:Verdana;
+    padding: 4px; 
+}
+.homecard-body{
+    margin-top: 10px;
+    width: 210px;       
+    background-color:rgba(204, 202, 67, 0.556);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-right: 18px;
+    transition: all 0.3s 0s ease;
+
+}
+.homecard-info{
+    background-color: white;
+    height:fit-content;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 95%;
+    font-style: italic;
+    height: fit-content;
+
+}
+img {
+    width: 80%;
+    border-color: black;
+  }
+.countient{
+    color: black; 
+    text-decoration: none;   
+}
+.nactivities{
+    color: black;
+    text-decoration: none;
+}
+link{
+    text-decoration: none;
+}  

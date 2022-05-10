@@ -1,0 +1,6 @@
+export const GET_COUNTRIES = "GET_COUNTRIES"
+export const GET_COUNTRY_BY_ID = "GET_COUNTRY_BY_ID"
+export const FILTER_BY_CONTINENT="FILTER_BY_CONTINENT"
+export const SET_PAGE="SET_PAGE"
+export const SET_ORDER = "SET_ORDER"
+export const POST_ACTIVITY ="POST_ACTIVITY"

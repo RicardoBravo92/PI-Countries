@@ -1,0 +1,28 @@
+.activitycard{
+    flex: auto;    
+    display: grid;
+    padding:10px;
+
+}
+.activitycard-body{
+   flex: auto;
+   height:fit-content;
+   font-family: 'Times New Roman', Times, serif;
+   width:max-content;
+   background-color: rgba(212, 211, 202, 0.883);
+   border-radius: 10px;
+   font-size: 10px;
+   padding: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   border: 2px solid
+}
+.noactivity{
+    flex: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid;
+    width:max-content;
+   
+}

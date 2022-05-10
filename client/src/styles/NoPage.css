@@ -1,0 +1,19 @@
+.nopage{
+    background-color: rgb(0, 2, 113);
+    height: 500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nopt{
+    background-color: rgb(135, 13, 176);
+    text-shadow: 2px 2px rgb(21, 49, 190);
+    font-size: xx-large;
+    font-weight: 200;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}

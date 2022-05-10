@@ -3,7 +3,7 @@ const { Activity, Country } = require("../db");
 exports.create = async (req, res) => {
   try {
     const { countries, name, difficulty, duration, season } = req.body;
-    const createdactivity = await Activity.create({
+    const activity = await Activity.create({
       name,
       difficulty,
       duration,
@@ -14,9 +14,9 @@ exports.create = async (req, res) => {
         name: countries,
       },
     });
-    await createdactivity.setCountries(countriesfounded);
-    return res.json(createdactivity);
+    await activity.setCountries(countriesfounded);
+    return res.json(activity);
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    return res.status(400).json({ error: error.message });
   }
 };

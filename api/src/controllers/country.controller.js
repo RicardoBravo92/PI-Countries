@@ -3,19 +3,17 @@ const { Op } = require("sequelize");
 
 exports.findAll = async (req, res) => {
   try {
-    const { name } = req.query;
-    if (name) {
-      let data = await Country.findAll({
-        where: { name: { [Op.like]: `%${name}%` } },
-        include: Activity,
-      });
-      return res.send(data);
-    } else {
-      let data = await Country.findAll({
-        include: Activity,
-      });
-      return res.send(data);
-    }
+    const { name, order, ASC, continent } = req.query;
+    const a = ASC == "DESC" ? "DESC" : "ASC";
+    let data = await Country.findAll({
+      where: {
+        name: { [Op.like]: `%${name ? name : ""}%` },
+        continent: { [Op.like]: `%${continent ? continent : ""}%` },
+      },
+      order: [[order ? order : "id", a]],
+      include: Activity,
+    });
+    return res.send(data);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -24,11 +22,15 @@ exports.findAll = async (req, res) => {
 exports.CountryByid = async (req, res) => {
   try {
     const { id } = req.params;
-    const foundcountry = await Country.findOne({
-      where: { id: id },
+    const country = await Country.findOne({
+      where: { id: id.toUpperCase()},
       include: Activity,
     });
-    return res.send(foundcountry);
+    if(country==null){
+      res.status(400).json("Not founded")
+    }else{
+      return res.send(country);
+    }
   } catch (error) {
     res.status(400).json({ error: error.message });
   }

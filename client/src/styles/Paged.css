@@ -1,0 +1,57 @@
+
+.buttonpaginade{
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  margin: 0.2rem;
+  min-width: 2rem;
+  padding: 0 0.3rem;
+  height: 2rem;
+  border-style: hidden;
+  cursor: pointer;  
+}
+.buttonpaginade:hover{
+  background-color: aquamarine;
+}
+.buttonpaginade a.active{
+  background-color: rgb(27, 91, 182);
+}
+  
+.PrevNext{
+    display: flex;
+    justify-content: center;
+}
+span {
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: white;
+  font-weight: bold;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  margin: 0.2rem;
+  min-width: 2rem;
+  padding: 0 0.3rem;
+  height: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+}
+span:hover{
+  background-color: bisque;
+}
+.ContainerPage{
+  padding-right: 20px;
+ display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
