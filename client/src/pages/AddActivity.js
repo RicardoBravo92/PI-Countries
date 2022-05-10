@@ -154,7 +154,7 @@ const AddActivity = () => {
 
           <div className="div">
             <label>Difficulty:</label>
-            <input
+            {/* <input
               type="number"
               min="1"
               max="5"
@@ -163,8 +163,20 @@ const AddActivity = () => {
               placeholder="1 to 5"
               onChange={(e) => handleChange(e)}
               className="inputSearch"
-            />
-
+            /> */}
+            <div>
+              Easy
+              <input
+                value={input.difficulty}
+                onChange={(e) => handleChange(e)}
+                name="difficulty"
+                type="range"
+                min="1"
+                max="5"
+                step="1"
+              ></input>
+              Hard
+            </div>
             {errors.difficulty && <p className="errors">{errors.difficulty}</p>}
           </div>
 

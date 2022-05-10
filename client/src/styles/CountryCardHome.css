@@ -20,6 +20,9 @@
     transition: all 0.3s 0s ease;
 
 }
+.homecard-body:hover{
+    background-color:rgba(221, 175, 22, 0.898);
+}
 .homecard-info{
     background-color: white;
     height:fit-content;
@@ -43,6 +46,4 @@ img {
     color: black;
     text-decoration: none;
 }
-link{
-    text-decoration: none;
-}  
+

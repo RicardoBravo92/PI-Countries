@@ -22,15 +22,14 @@
     top: 0;
     background-color: rgb(0, 2, 113);
     display: flex;
-    justify-content:space-between;   
+    justify-content:space-between;
+    align-items: center;   
     flex-wrap: wrap;
     gap: 0.8rem;
     padding: 1rem 0;
-    height:0ch;
+    height:800px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 10px;
-    height:max-content;
 }
 
 .nocontries{
